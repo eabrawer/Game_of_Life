@@ -16,6 +16,7 @@ describe "Game of Life" do
 
 		it "should create a proper cell grid on initialization" do
 			expect(subject.cell_grid).to be_a(Array)
+			expect(subject.cell_grid.each { |row| row }).to be_a(Array) 
 		end
 	end
 end
