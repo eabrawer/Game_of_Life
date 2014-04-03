@@ -19,4 +19,12 @@ describe "Game of Life" do
 			expect(subject.cell_grid.each { |row| row }).to be_a(Array) 
 		end
 	end
+
+	describe Cell do
+		subject { Cell.new }
+			it "should create a new cell object" do
+				expect(subject).to be_a(Cell)
+			end
+		it 
+	end
 end
