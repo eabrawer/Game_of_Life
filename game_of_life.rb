@@ -13,3 +13,7 @@ class World
 		end
 	end
 end
+
+class Cell
+	
+end

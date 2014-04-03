@@ -22,9 +22,8 @@ describe "Game of Life" do
 
 	describe Cell do
 		subject { Cell.new }
-			it "should create a new cell object" do
-				expect(subject).to be_a(Cell)
-			end
-		it 
+		it "should create a new cell object" do
+			expect(subject).to be_a(Cell)
+		end
 	end
 end
