@@ -10,7 +10,8 @@ describe "Game of Life" do
 
 		it "should respond to col and row methods" do
 			expect(subject).to respond_to(:cols)
-			expect(subject).to respond_to(:rows)			
+			expect(subject).to respond_to(:rows)		
+			expect(subject).to respond_to(:cell_grid)	
 		end
 	end
 end
