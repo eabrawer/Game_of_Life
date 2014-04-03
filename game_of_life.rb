@@ -1,4 +1,4 @@
 # Basic file
-class Game
+class World
 
 end
