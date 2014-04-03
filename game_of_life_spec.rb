@@ -13,5 +13,9 @@ describe "Game of Life" do
 			expect(subject).to respond_to(:rows)		
 			expect(subject).to respond_to(:cell_grid)	
 		end
+
+		it "should create a proper cell grid on initialization" do
+			expect(subject.cell_grid).to be_a(Array)
+		end
 	end
 end
