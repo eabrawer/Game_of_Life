@@ -1,5 +1,16 @@
 # Basic file
+class Game
+	attr_accessor :world, :seeds
+	def initialize(world=World.new, seeds=[])
+		@world = world
+		@seeds = seeds
 
+		seeds.each do |seed|
+			world.cell_grid[seed[0]][seed[1]].alive = true
+		end
+	end
+
+end
 
 class World
 	attr_accessor :rows, :cols, :cell_grid 
@@ -24,14 +35,11 @@ class Cell
 		@x = x
 		@y = y
 	end
-end
 
-class Game
-	attr_accessor :world, :seeds
-	def initialize(world=World.new, seeds=[])
-		@world = world
-		@seeds = seeds
+	def alive?
+		alive
 	end
 end
+
 
 
