@@ -16,4 +16,12 @@ class World
 end
 
 class Cell
+	attr_accessor :alive
+	attr_reader :x, :y
+
+	def initialize
+		@alive = false
+	end
 end
+
+
