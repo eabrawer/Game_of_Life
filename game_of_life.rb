@@ -26,4 +26,8 @@ class Cell
 	end
 end
 
+class Game
+	
+end
+
 
