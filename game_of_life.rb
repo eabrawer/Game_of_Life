@@ -19,8 +19,10 @@ class Cell
 	attr_accessor :alive
 	attr_reader :x, :y
 
-	def initialize
+	def initialize(x=0, y=0)
 		@alive = false
+		@x = x
+		@y = y
 	end
 end
 

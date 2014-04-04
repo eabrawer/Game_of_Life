@@ -38,6 +38,8 @@ describe "Game of Life" do
 
 		it "should initialize properly" do
 			expect(subject.alive).to be_false
+			expect(subject.y).to be(0)
+			expect(subject.x).to be(0)
 		end
 	end
 end
