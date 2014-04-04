@@ -61,6 +61,25 @@ describe "Game of Life" do
 		describe "Rule 4: Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction" do
 		end
 	end
+
+	describe Game do
+		subject { Game.new }
+
+		it "should create a new game object" do
+			expect(subject).to be_a(Game)
+		end
+
+		it "should respond to proper methods" do
+			expect(subject).to respond_to(:world)
+			expect(subject).to respond_to(:seeds)
+		end
+
+		it "should initialize properly" do
+			expect(subject.world).to be_a(World)
+			expect(subject.seeds).to be_a(Array)
+		end
+	end
+
 end
 
 
